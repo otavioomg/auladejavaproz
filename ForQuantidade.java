@@ -3,7 +3,9 @@ import java.util.Scanner;
 public class ForQuantidade {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int quantidade = 5;
+        int quantidade;
+        System.out.print("Quantas unidades você quer: ");
+        quantidade = scanner.nextInt();
         
         for (int i=0; i < quantidade; i++){
             System.out.print("Digite o numero: ");
@@ -16,9 +18,6 @@ public class ForQuantidade {
             }else{
                 System.out.println("Erro dos sonhos");
             }
-
-        System.out.print("Deseja continuar? (5. Sim / 1. Não): ");
-        quantidade = scanner.nextInt();
         }
     scanner.close();
     }
