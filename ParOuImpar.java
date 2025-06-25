@@ -15,6 +15,11 @@ public class ParOuImpar {
             }else{
                 System.out.println("Erro dos sonhos");
             }
+
+            System.out.print("Deseja continuar? (1. Sim / 2. Não): ");
+            repetidor = scanner.nextInt();
         }
-    }
+        scanner.close();
+        }
 }
+
